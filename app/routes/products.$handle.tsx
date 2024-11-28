@@ -8,10 +8,10 @@ import {
   useOptimisticVariant,
 } from '@shopify/hydrogen';
 import type {SelectedOption} from '@shopify/hydrogen/storefront-api-types';
-import {getVariantUrl} from '~/lib/variants';
-import {ProductPrice} from '~/components/ProductPrice';
-import {ProductImage} from '~/components/ProductImage';
-import {ProductForm} from '~/components/ProductForm';
+import {getVariantUrl} from './app/lib/variants';
+import {ProductPrice} from './app/components/ProductPrice';
+import {ProductImage} from './app/components/ProductImage';
+import {ProductForm} from './app/components/ProductForm';
 
 export const meta: MetaFunction<typeof loader> = ({data}) => {
   return [{title: `Hydrogen | ${data?.product.title ?? ''}`}];
