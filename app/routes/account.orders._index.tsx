@@ -5,12 +5,12 @@ import {
   flattenConnection,
 } from '@shopify/hydrogen';
 import {json, type LoaderFunctionArgs} from '@shopify/remix-oxygen';
-import {CUSTOMER_ORDERS_QUERY} from './app/graphql/customer-account/CustomerOrdersQuery';
+import {CUSTOMER_ORDERS_QUERY} from 'app/graphql/customer-account/CustomerOrdersQuery';
 import type {
   CustomerOrdersFragment,
   OrderItemFragment,
 } from 'customer-accountapi.generated';
-import {PaginatedResourceSection} from './app/components/PaginatedResourceSection';
+import {PaginatedResourceSection} from 'app/components/PaginatedResourceSection';
 
 export const meta: MetaFunction = () => {
   return [{title: 'Orders'}];

@@ -13,10 +13,10 @@ This integration uses the storefront API (SFAPI) [predictiveSearch](https://shop
 
 ## Components
 
-| File                                                                                             | Description                                                                                                                                            |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [`app/components/SearchFormPredictive.tsx`](../../app/components/SearchFormPredictive.tsx)       | A fully customizable form component configured to make form `GET` requests to the `/search` route.                                                     |
-| [`app/components/SearchResultsPredictive.tsx`](../../app/components/SearchResultsPredictive.tsx) | A fully customizable search results wrapper, that provides compound components to render `articles`, `pages`, `products`, `collections` and `queries`. |
+| File                                                                                           | Description                                                                                                                                            |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [`app/components/SearchFormPredictive.tsx`](../.app/components/SearchFormPredictive.tsx)       | A fully customizable form component configured to make form `GET` requests to the `/search` route.                                                     |
+| [`app/components/SearchResultsPredictive.tsx`](../.app/components/SearchResultsPredictive.tsx) | A fully customizable search results wrapper, that provides compound components to render `articles`, `pages`, `products`, `collections` and `queries`. |
 
 ## Instructions
 
@@ -234,8 +234,8 @@ export async function loader({request, context}: LoaderFunctionArgs) {
 Create a SearchAside or similar component to render the form and results.
 
 ```ts
-import {SearchFormPredictive} from './app/components/SearchFormPredictive';
-import {SearchResultsPredictive} from './app/components/SearchResultsPredictive';
+import {SearchFormPredictive} from 'app/components/SearchFormPredictive';
+import {SearchResultsPredictive} from 'app/components/SearchResultsPredictive';
 
 function SearchAside() {
   return (
