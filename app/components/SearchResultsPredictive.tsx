@@ -5,7 +5,7 @@ import {
   getEmptyPredictiveSearchResult,
   urlWithTrackingParams,
   type PredictiveSearchReturn,
-} from '~/lib/search';
+} from './app/lib/search';
 import {useAside} from './Aside';
 
 type PredictiveSearchItems = PredictiveSearchReturn['result']['items'];

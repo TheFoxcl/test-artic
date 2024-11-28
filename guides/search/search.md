@@ -210,7 +210,7 @@ export async function loader({request, context}: LoaderFunctionArgs) {
   const isRegular = !url.searchParams.has('predictive');
 
   if (!isRegular) {
-    return json({})
+    return json({});
   }
 
   const searchPromise = regularSearch({request, context});
@@ -229,8 +229,8 @@ export async function loader({request, context}: LoaderFunctionArgs) {
 Finally, create a default export to render both the search form and the search results
 
 ```ts
-import {SearchForm} from '~/components/SearchForm';
-import {SearchResults} from '~/components/SearchResults';
+import {SearchForm} from './app/components/SearchForm';
+import {SearchResults} from './app/components/SearchResults';
 
 /**
  * Renders the /search route
