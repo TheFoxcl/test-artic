@@ -16,7 +16,7 @@ import resetStyles from 'app/styles/reset.css?url';
 import appStyles from 'app/styles/app.css?url';
 import tailwindCss from './styles/tailwind.css?url';
 import {PageLayout} from 'app/components/PageLayout';
-import {FOOTER_QUERY, HEADER_QUERY} from 'app/lib/fragments.ts';
+import {FOOTER_QUERY, HEADER_QUERY} from 'app/lib/fragments';
 
 export type RootLoader = typeof loader;
 

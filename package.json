@@ -8,10 +8,9 @@
     "build": "shopify hydrogen build --codegen",
     "dev": "shopify hydrogen dev --codegen",
     "preview": "shopify hydrogen preview --build",
-    "postbuild": "replace-in-file 'from \"~/' 'from \"./app/' -- dist/**/*.js dist/**/*.ts dist/**/*.tsx dist/**/*.js.map",
     "lint": "eslint --no-error-on-unmatched-pattern --ext .js,.ts,.jsx,.tsx .",
     "typecheck": "tsc --noEmit",
-    "start": "node --loader ts-node/esm --experimental-specifier-resolution=node server.ts",
+    "start": "node server.js",
     "codegen": "shopify hydrogen codegen"
   },
   "prettier": "@shopify/prettier-config",
