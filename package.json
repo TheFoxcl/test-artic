@@ -3,7 +3,6 @@
   "private": true,
   "sideEffects": false,
   "version": "2024.10.1",
-  "type": "module",
   "scripts": {
     "build": "shopify hydrogen build --codegen",
     "dev": "shopify hydrogen dev --codegen",
@@ -27,6 +26,7 @@
     "isbot": "^3.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "semver": "^7.6.3",
     "swiper": "^11.1.15"
   },
   "devDependencies": {
@@ -49,9 +49,7 @@
     "prettier": "^2.8.4",
     "replace-in-file": "^8.2.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.2.2",
-    "vite": "^5.1.0",
-    "vite-tsconfig-paths": "^4.3.1"
+    "typescript": "^5.2.2"
   },
   "engines": {
     "node": ">=18.0.0"
